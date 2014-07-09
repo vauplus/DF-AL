@@ -24,17 +24,17 @@ switch(_shop) do
 	{
 		switch(true) do
 		{
-			case (playerSide != west): {"You are not a cop!"};
+			case (playerSide != west): {"Du bist kein Polizist!"};
 			default
 			{
 				["Anwärterladen",
 					[
 						["hgun_Pistol_heavy_01_F","Taser Pistole",2000],
-						["11Rnd_45ACP_Mag","12mm 11 Schuss",100],
+						["11Rnd_45ACP_Mag",nil,100],
 						["optic_MRD","Pistolenvisier",500],
-						["muzzle_snds_acp","12mm Schalldämpfer",500],
-						["arifle_sdar_F","Taser Gewehr",20000],
-						["30Rnd_65x39_caseless_green","5,56mm 30 Schuss",1000],
+						["muzzle_snds_acp",nil,500],
+						["arifle_Katiba_F","Taser Gewehr",20000],
+						["30Rnd_65x39_caseless_green","Taser Mag",1000],
 						["optic_Aco",Visier,1500],
 						["HandGrenade_Stone","Blendgranate",2000],
 						["ItemGPS","Navigationsgerät",100],
@@ -52,7 +52,7 @@ switch(_shop) do
 	{
 		switch (true) do 
 		{
-			case (playerSide != independent): {"You are not an EMS Medic"};
+			case (playerSide != independent): {"Du bist kein Arzt!"};
 			default {
 				["Arztladen",
 					[
@@ -209,18 +209,18 @@ switch(_shop) do
 	{
 		switch(true) do
 		{
-			case (playerSide != west): {"You are not a cop!"};
-			case (__GETC__(life_coplevel) < 2): {"You are not at a patrol officer rank!"};
+			case (playerSide != west): {"Du bist kein Polizist!"};
+			case (__GETC__(life_coplevel) < 2): {"Du bist kein Polizist!"};
 			default
 			{
 				["Polizeiladen",
 					[
 						["hgun_Pistol_heavy_01_F","Taser Pistole",2000],
-						["11Rnd_45ACP_Mag","12mm 11 Schuss",100],
+						["11Rnd_45ACP_Mag",nil,100],
 						["optic_MRD","Pistolenvisier",500],
-						["muzzle_snds_acp","12mm Schalldämpfer",500],
-						["arifle_sdar_F","Taser Gewehr",20000],
-						["30Rnd_65x39_caseless_green","5,56mm 30 Schuss",1000],
+						["muzzle_snds_acp",nil,500],
+						["arifle_Katiba_F","Taser Gewehr",20000],
+						["30Rnd_65x39_caseless_green","Taser Mag",1000],
 						["optic_Aco",Visier,1500],
 						["HandGrenade_Stone","Blendgranate",2000],
 						["ItemGPS","Navigationsgerät",100],
@@ -238,16 +238,18 @@ switch(_shop) do
 	{
 		switch(true) do
 		{
-			case (playerSide != west): {"You are not a cop!"};
-			case (__GETC__(life_coplevel) < 3): {"You are not at a sergeant rank!"};
+			case (playerSide != west): {"Du bist kein Polizist!"};
+			case (__GETC__(life_coplevel) < 3): {"Du bist kein Bundespolizist!"};
 			default
 			{
 				["Bundespolizeiladen",
 					[
 						["hgun_Pistol_heavy_01_F","Taser Pistole",2000],
-						["11Rnd_45ACP_Mag","12mm 11 Schuss",100],
+						["11Rnd_45ACP_Mag",nil,100],
 						["optic_MRD","Pistolenvisier",500],
-						["muzzle_snds_acp","12mm Schalldämpfer",500],
+						["muzzle_snds_acp",nil,500],
+						["arifle_Katiba_F","Taser Gewehr",20000],
+						["30Rnd_65x39_caseless_green","Taser Mag",1000],
 						["arifle_MXM_Black_F","6,5mm MXM F",30000],
 						["30Rnd_65x39_caseless_mag","6,5mm 30 Schuss",100],
 						["muzzle_snds_H","6,5mm Schalldämpfer",2500],
@@ -276,9 +278,11 @@ switch(_shop) do
 				["S.E.K Laden",
 					[
 						["hgun_Pistol_heavy_01_F","Taser Pistole",2000],
-						["11Rnd_45ACP_Mag","12mm 11 Schuss",100],
+						["11Rnd_45ACP_Mag",nil,100],
 						["optic_MRD","Pistolenvisier",500],
-						["muzzle_snds_acp","12mm Schalldämpfer",500],
+						["muzzle_snds_acp",nil,500],
+						["arifle_Katiba_F","Taser Gewehr",20000],
+						["30Rnd_65x39_caseless_green","Taser Mag",1000],
 						["arifle_MXM_Black_F","6,5mm MXM F",30000],
 						["30Rnd_65x39_caseless_mag","6,5mm 30 Schuss",100],
 						["muzzle_snds_H","6,5mm Schalldämpfer",2500],
@@ -307,9 +311,11 @@ switch(_shop) do
 				["Polizeichefladen",
 					[
 						["hgun_Pistol_heavy_01_F","Taser Pistole",2000],
-						["11Rnd_45ACP_Mag","12mm 11 Schuss",100],
+						["11Rnd_45ACP_Mag",nil,100],
 						["optic_MRD","Pistolenvisier",500],
-						["muzzle_snds_acp","12mm Schalldämpfer",500],
+						["muzzle_snds_acp",nil,500],
+						["arifle_Katiba_F","Taser Gewehr",20000],
+						["30Rnd_65x39_caseless_green","Taser Mag",1000],
 						["srifle_EBR_F","7,62mm EBR F",30000],
 						["20Rnd_762x51_Mag","7,62mm 20 Schuss",100],
 						["muzzle_snds_B","7,62mm Schalldämpfer",2750],
@@ -337,8 +343,8 @@ switch(_shop) do
 	{
 		switch(true) do
 		{
-			case (playerSide != civilian): {"You are not a civilian!"};
-			case (!license_civ_rebel): {"You don't have a Rebel training license!"};
+			case (playerSide != civilian): {"Du bist kein Zivilist!"};
+			case (!license_civ_rebel): {"Du hast keine Rebellen-Lizenz!"};
 			default
 			{
 				["Rebellenladen",
@@ -384,8 +390,8 @@ switch(_shop) do
 	{
 		switch(true) do
 		{
-			case (playerSide != civilian): {"You are not a civilian!"};
-			case (!license_civ_gun): {"You don't have a Firearms license!"};
+			case (playerSide != civilian): {"Du bist kein Zivilist!"};
+			case (!license_civ_gun): {"Du hast keine Waffen-Lizenz!"};
 			default
 			{
 				["Waffenladen",

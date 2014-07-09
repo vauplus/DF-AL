@@ -19,7 +19,7 @@ life_clothing_purchase set[life_clothing_filter,(_control lbValue _selection)];
 _data = _control lbData _selection;
 
 [_data,true] call life_fnc_handleItem;
-_price ctrlSetStructuredText parseText format ["Price: <t color='#8cff9b'>$%1</t>",[(_control lbValue _selection)] call life_fnc_numberText];
+_price ctrlSetStructuredText parseText format ["Preis: <t color='#8cff9b'>$%1</t>",[(_control lbValue _selection)] call life_fnc_numberText];
 
 _totalPrice = 0;
 {
@@ -29,4 +29,4 @@ _totalPrice = 0;
 	};
 } foreach life_clothing_purchase;
 
-_total ctrlSetStructuredText parseText format ["Total: <t color='#8cff9b'>$%1</t>",[_totalPrice] call life_fnc_numberText];
+_total ctrlSetStructuredText parseText format ["Gesamt: <t color='#8cff9b'>$%1</t>",[_totalPrice] call life_fnc_numberText];

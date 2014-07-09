@@ -20,15 +20,15 @@ if(_marketprice != -1) then
 };
 
 _amount = ctrlText 2405;
-if(!([_amount] call fnc_isnumber)) exitWith {hint "You didn't enter an actual number";};
+if(!([_amount] call fnc_isnumber)) exitWith {hint "Wie wäre es mit Zahlen?";};
 _amount = parseNumber (_amount);
-if(_amount > (missionNameSpace getVariable _var)) exitWith {hint "You don't have that many items to sell!"};
+if(_amount > (missionNameSpace getVariable _var)) exitWith {hint "Die anzahl stimmt nicht mit deinen verfügbaren Gegenständen überein!"};
 
 _price = (_price * _amount);
 _name = [_var] call life_fnc_vartostr;
 if(([false,_type,_amount] call life_fnc_handleInv)) then
 {
-	hint format["You sold %1 %2 for $%3",_amount,_name,[_price] call life_fnc_numberText];
+	hint format["Du hast %1 %2 für $%3 verkauft.",_amount,_name,[_price] call life_fnc_numberText];
 	life_cash = life_cash + _price;
 	if(_marketprice != -1) then 
 	{ 
