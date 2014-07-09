@@ -29,6 +29,6 @@ if(primaryWeapon _unit != "") then
 	} foreach (primaryWeaponItems _unit);
 };
 
-if(count _attach == 0) then {_attach = "None"};
-_text ctrlSetStructuredText parseText format["Name: %1<br/>Bank: %2<br/>Money: %3<br/>Uniform: %4<br/>Vest: %5<br/>Backpack: %6<br/>Primary: %7<br/>Handgun: %8<br/><t align='center'>Primary Attachments</t><br/>%9",
+if(count _attach == 0) then {_attach = "Nichts"};
+_text ctrlSetStructuredText parseText format["Name: %1<br/>Bank: %2<br/>Geld: %3<br/>Uniform: %4<br/>Weste: %5<br/>Rucksack: %6<br/>Primär: %7<br/>Handwaffe: %8<br/><t align='center'>Primär zubehör</t><br/>%9",
 _unit getVariable["realname",name _unit],[_ret select 0] call life_fnc_numberText,[_ret select 1] call life_fnc_numberText, _uni,_vest,_bp,_prim,_sec,_attach];

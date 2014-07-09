@@ -26,6 +26,9 @@ switch (_state) do
 		license_civ_gun = false;
 		license_civ_rebel = false;
 		license_civ_driver = false;
+		license_civ_air = false;
+		license_civ_truck = false;
+		license_civ_boat = false;
 	};
 	
 	//Remove motor vehicle licenses
@@ -36,7 +39,7 @@ switch (_state) do
 			license_civ_air = false;
 			license_civ_truck = false;
 			license_civ_boat = false;
-			hint "You have lost all your motor vehicle licenses for vehicular manslaughter.";
+			hint "Für das fahrlässige Töten wurden alle Fahrzeug-Lizenzen entfernt.";
 		};
 	};
 	
@@ -45,7 +48,7 @@ switch (_state) do
 	{
 		if(license_civ_gun) then {
 			license_civ_gun = false;
-			hint "You have lost your firearms license for manslaughter.";
+			hint "Für das fahrlässige Töten wurde deine Waffen-Lizenz entfernt.";
 		};
 	};
 };

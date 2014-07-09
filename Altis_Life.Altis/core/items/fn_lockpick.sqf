@@ -60,8 +60,8 @@ while {true} do
 player playActionNow "stop";
 if(!alive player OR life_istazed) exitWith {life_action_inUse = false;};
 if((player getVariable["restrained",false])) exitWith {life_action_inUse = false;};
-if(!isNil "_badDistance") exitWith {titleText["You got to far away from the target.","PLAIN"]; life_action_inUse = false;};
-if(life_interrupted) exitWith {life_interrupted = false; titleText["Action cancelled","PLAIN"]; life_action_inUse = false;};
+if(!isNil "_badDistance") exitWith {titleText["Du bist zu weit von dem Ziel entfernt.","PLAIN"]; life_action_inUse = false;};
+if(life_interrupted) exitWith {life_interrupted = false; titleText["Aktion abgebrochen","PLAIN"]; life_action_inUse = false;};
 if(!([false,"lockpick",1] call life_fnc_handleInv)) exitWith {life_action_inUse = false;};
 
 life_action_inUse = false;
@@ -73,12 +73,12 @@ if(!_isVehicle) then {
 } else {
 	_dice = random(100);
 	if(_dice < 30) then {
-		titleText["You now have keys to this vehicle.","PLAIN"];
+		titleText["Du hast nun die Schlüssel zu diesem Fahrzeug.","PLAIN"];
 		life_vehicles set[count life_vehicles,_curTarget];
 		[[getPlayerUID player,player getVariable["realname",name player],"487"],"life_fnc_wantedAdd",false,false] spawn life_fnc_MP;
 	} else {
 		[[getPlayerUID player,player getVariable["realname",name player],"215"],"life_fnc_wantedAdd",false,false] spawn life_fnc_MP;
-		[[0,format["%1 was seen trying to lockpick a car.",player getVariable["realname",name player]]],"life_fnc_broadcast",west,false] spawn life_fnc_MP;
-		titleText["The lockpick broke.","PLAIN"];
+		[[0,format["%1 hat versucht ein Fahrzeug aufzubrechen.",player getVariable["realname",name player]]],"life_fnc_broadcast",west,false] spawn life_fnc_MP;
+		titleText["Der Dietrich ist gebrochen.","PLAIN"];
 	};
 };
