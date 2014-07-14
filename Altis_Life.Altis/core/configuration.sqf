@@ -38,6 +38,11 @@ __CONST__(life_revive_fee,750); //Fee for players to pay when revived.
 //House Limit
 __CONST__(life_houseLimit,7); //Maximum amount of houses a player can buy (TODO: Make Tiered licenses).
 
+//Gang Stuff
+__CONST__(life_gangPrice,75000);
+__CONST__(life_gangUpgradeBase,10000);
+__CONST__(life_gangUpgradeMultipler,2.5);
+
 //Uniform price (0),Hat Price (1),Glasses Price (2),Vest Price (3),Backpack Price (4)
 life_clothing_purchase = [-1,-1,-1,-1,-1];
 /*

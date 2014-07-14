@@ -21,11 +21,13 @@ switch(playerSide) do
 	case civilian:
 	{
 		ctrlShow[2012,false];
+		ctrlShow[9800,false];
 	};
 	
 	case independent:
 	{
-		ctrlShow[2030,false];	
+		ctrlShow[2030,false];
+		ctrlShow[9800,false];	
 	};
 };
 

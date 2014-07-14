@@ -57,6 +57,25 @@ player createDiarySubject ["place8","-------------------------"];
 				
 				<br/><br/><br/>
 				
+				12.07.2014: Änderungen am Server: <br/><br/><br/>
+				
+				+ Hinzugefügt: Permanente Gangs + Gang Verstecke<br/>
+				  (Können eingenommen bleibt aber nicht Permanent!)<br/><br/>				
+				+ Hinzugefügt: Ein Geheimerhändler der Zufällig an Orten<br/>
+				  auftaucht und für 20 Minuten bleibt.<br/><br/>
+				+ Hinzugefügt: Polizei kann nun auch Manuell Wanteds ver-
+				  geben.<br/><br/>
+				+ Änderungen: Update auf Altis Life 3.1.4
+
+				-- --- -- --- -- --- ---- -- --- -- --- -- --- ---- -- --- -- --- -- --- ---- <br/>
+				
+				12.07.2014: Änderungen am Server: <br/><br/><br/>
+				
+				+ Hinzugefügt: Kofferraum von Fahrzeugen wird nun <br/>
+				  gespeichert(Nur T Inventar!) .<br/><br/>				
+				+ Änderungen: Fehler im Housing-System wurden behoben<br/><br/>
+
+				-- --- -- --- -- --- ---- -- --- -- --- -- --- ---- -- --- -- --- -- --- ---- <br/>
 				
 				08.07.2014: Änderungen am Server und Map: <br/><br/><br/>
 				

@@ -4,7 +4,7 @@
 	Description:
 	Called upon first spawn selection and welcomes our player.
 */
-format["Willkommen %1 auf Die Firma Altis Life",player getVariable["realname",name player]] hintC
+format["Willkommen %1 auf Die Firma Altis Life",profileName] hintC
 [
 	"Herzlich Willkommen auf unseren Server",
 	"Halte dich bitte an die Regeln!",

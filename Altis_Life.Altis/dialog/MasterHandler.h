@@ -26,3 +26,4 @@
 #include "federalReserve.h"
 #include "common_EditorWrapper.hpp"
 #include "market.hpp"
+#include "wantedadd2.hpp"

@@ -125,6 +125,7 @@ class Life_Client_Core
 		class gatherWood {};
 		class gatherHopfen {};
 		class gatherFrog {};
+		class captureHideout {};
 	};
 	
 	class Housing
@@ -132,8 +133,7 @@ class Life_Client_Core
 		file = "core\housing";
 		class buyHouse {};
 		class getBuildingPositions {};
-		class houseMenu {};
-		class isBuildingPosTaken {};
+		class houseMenu {};;
 		class lightHouse {};
 		class lightHouseAction {};
 		class sellHouse {};
@@ -215,6 +215,7 @@ class Life_Client_Core
 		class updateViewDistance {};
 		class settingsMenu {};
 		class settingsInit {};
+		class wanted2 {};
 	};
 	
 	class Functions
@@ -336,16 +337,19 @@ class Life_Client_Core
 	class Gangs
 	{
 		file = "core\gangs";
+		class initGang {};
 		class createGang {};
-		class gangBrowser {};
-		class gangManagement {};
+		class gangCreated {};
 		class gangMenu {};
-		class joinGang {};
-		class kickGang {};
-		class leaveGang {};
-		class setGangLeader {};
-		class lockGang {};
-		class unlockGang {};
+		class gangKick {};
+		class gangLeave {};
+		class gangNewLeader {};
+		class gangUpgrade {};
+		class gangInvitePlayer {};
+		class gangInvite {};
+		class gangDisband {};
+		class gangDisbanded {};
+	
 	};
 	
 	class Shops
@@ -410,5 +414,6 @@ class Life_Client_Core
 		class safeTake {};
 		class safeFix {};
 		class vehicleGarage {};
+		class gangDeposit {};
 	};
 };

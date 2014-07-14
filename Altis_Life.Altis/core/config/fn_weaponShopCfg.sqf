@@ -48,6 +48,71 @@ switch(_shop) do
 		};
 	};
 	
+	case "gang":
+	{
+		switch(true) do
+		{
+			case (playerSide != civilian): {"Du bist kein Zivilist!"};
+			default
+			{
+				["Gangladen",
+					[
+						["hgun_Rook40_F",nil,6500],
+						["hgun_Pistol_heavy_02_F",nil,9850],
+						["hgun_ACPC2_F",nil,11500],
+						["hgun_PDW2000_F",nil,20000],
+						["optic_ACO_grn_smg",nil,2500],
+						["V_Rangemaster_belt",nil,4900],
+						["16Rnd_9x21_Mag",nil,25],
+						["9Rnd_45ACP_Mag",nil,45],
+						["6Rnd_45ACP_Cylinder",nil,50],
+						["30Rnd_9x21_Mag",nil,75]
+					]
+				];
+			};
+		};
+	};
+	
+	case "secret":
+	{
+		switch(true) do
+		{
+			case (playerSide != civilian): {"Du bist kein Zivilist!"};
+			default
+			{
+				["Geheimerhändler",
+					[
+						["srifle_LRR_F",nil,500000],
+						["7Rnd_408_Mag",nil,8000],
+						["LMG_Mk200_F",nil,500000],
+						["200Rnd_65x39_cased_Box",nil,8000],
+						["arifle_Katiba_GL_F",nil,500000],
+						["30Rnd_65x39_caseless_green",nil,6000],
+						["arifle_TRG21_GL_F",nil,400000],
+						["30Rnd_556x45_Stanag",nil,5000],
+						["arifle_Mk20_GL_F",nil,500000],
+						["30Rnd_556x45_Stanag",nil,6000],
+						["optic_Nightstalker",nil,700000],
+						["optic_tws",nil,600000],
+						["optic_tws_mg",nil,600000],
+						["1Rnd_HE_Grenade_shell",nil,10000],
+						["UGL_FlareWhite_F",nil,10000],
+						["UGL_FlareGreen_F",nil,10000],
+						["UGL_FlareRed_F",nil,10000],
+						["UGL_FlareYellow_F",nil,10000],
+						["UGL_FlareCIR_F",nil,10000],
+						["1Rnd_Smoke_Grenade_shell",nil,10000],
+						["1Rnd_SmokeRed_Grenade_shell",nil,10000],
+						["1Rnd_SmokeGreen_Grenade_shell",nil,10000],
+						["1Rnd_SmokePurple_Grenade_shell",nil,10000],
+						["1Rnd_SmokeBlue_Grenade_shell",nil,10000],
+						["1Rnd_SmokeOrange_Grenade_shell",nil,10000]
+					]
+				];
+			};
+		};
+	};
+	
 	case "med_basic":
 	{
 		switch (true) do 
