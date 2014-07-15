@@ -57,7 +57,15 @@ player createDiarySubject ["place8","-------------------------"];
 				
 				<br/><br/><br/>
 				
-				12.07.2014: Änderungen am Server: <br/><br/><br/>
+				15.07.2014: Änderungen am Server: <br/><br/><br/>
+				
+				+ Hinzugefügt: Neue Animationen<br/>
+				  (Shift + 1 - 4)<br/><br/>				
+				+ Änderungen: Tempest Gerät kann nun verkauft werden<br/><br/>
+
+				-- --- -- --- -- --- ---- -- --- -- --- -- --- ---- -- --- -- --- -- --- ---- <br/>
+				
+				14.07.2014: Änderungen am Server: <br/><br/><br/>
 				
 				+ Hinzugefügt: Permanente Gangs + Gang Verstecke<br/>
 				  (Können eingenommen bleibt aber nicht Permanent!)<br/><br/>				
@@ -65,7 +73,7 @@ player createDiarySubject ["place8","-------------------------"];
 				  auftaucht und für 20 Minuten bleibt.<br/><br/>
 				+ Hinzugefügt: Polizei kann nun auch Manuell Wanteds ver-
 				  geben.<br/><br/>
-				+ Änderungen: Update auf Altis Life 3.1.4
+				+ Änderungen: Update auf Altis Life 3.1.4<br/><br/>
 
 				-- --- -- --- -- --- ---- -- --- -- --- -- --- ---- -- --- -- --- -- --- ---- <br/>
 				
@@ -1412,6 +1420,14 @@ player createDiarySubject ["place8","-------------------------"];
 				Z I V I L I S T E N und P O L I Z I S T E N: <br/><br/>
 				
 				Linke Windowstaste: Interaktions Menü <br/>
+				
+				Shift + 1:Martial-Arts <br/>
+				
+				Shift + 2:Kniebeugen(Langsam) <br/>
+				
+				Shift + 3:Kniebeugen(Schnell) <br/>
+				
+				Shift + 4:Liegestützen <br/>
 
 				"
 		]

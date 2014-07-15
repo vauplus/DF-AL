@@ -31,6 +31,30 @@ if(life_action_inUse) exitWith {
 
 switch (_code) do
 {
+
+     case 2:
+	 {
+	     if(_shift) then {_handled = true;};
+		 player playMove "AmovPercMstpSnonWnonDnon_exerciseKata";
+	 };
+	 
+	 case 3:
+	 {
+	     if(_shift) then {_handled = true;};
+		 player playMove "AmovPercMstpSnonWnonDnon_exercisekneeBendA";
+	 };
+	 
+	 case 4:
+	 {
+	     if(_shift) then {_handled = true;};
+		 player playMove "AmovPercMstpSnonWnonDnon_exercisekneeBendB";
+	 };
+	 
+	 case 5:
+	 {
+	     if(_shift) then {_handled = true;};
+		 player playMove "AmovPercMstpSnonWnonDnon_exercisePushup";
+	 };
 	//Space key for Jumping
 	case 57:
 	{

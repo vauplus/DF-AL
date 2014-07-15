@@ -459,6 +459,7 @@ life_garage_sell =
 	["B_SDV_01_F",100000],
 	["I_Truck_02_medical_F",25000],
 	["O_Truck_03_medical_F",45000],
-	["B_Truck_01_medical_F",60000]
+	["B_Truck_01_medical_F",60000],
+	["O_Truck_03_device_F",500000]
 ];
 __CONST__(life_garage_sell,life_garage_sell);
